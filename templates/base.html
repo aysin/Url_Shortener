@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang='en'>
+	<meta charset="UTF-8">
+	<title>Url Shortener</title>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+ 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+</head>
+	<body>
+		<div class="container">
+
+			<form role="form" id="form-url" action method="post">{% csrf_token %}
+			<div class="jumbotron">
+					<h1><a href="http://aysinoruz.com">URL Shortner </a></h1>
+					<h1><small> Test Code for Fyndiq</small></h1>
+
+					<p class="lead">Enter your url below</p>
+
+						<div class="input-group">
+							<span class="input-group-addon" id="basic-addon1">URL:</span>
+							{{ form.url }}
+						</div>
+					<br>
+				<p><input type="submit" class="btn btn-lg btn-succes" value="Submit URL" role="button"></p>
+			</div>
+			</form>
+
+				{% if result %}
+				<div class="alert alert-success" role="alert">
+					Your short url: {{ short_url }} 
+				</div>
+				{% endif %}
+				
+				{% if msg %}
+				<div class="alert alert-warning" role="alert">
+					{{ msg }}
+				</div>
+				{% endif %}
+
+				<footer class='footer'>
+					<p><small>&copy; Aysin Oruz</small></p>
+				</footer>
+
+		</div>
+
+		<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+	</body>
+</html>
+
+
+
