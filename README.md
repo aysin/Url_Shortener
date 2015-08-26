@@ -1,16 +1,11 @@
-=====
-urlShortener
-=====
-
-django-url-shortener-words is a simple Django app to short urls by words library.
-The shortened URLs will have the form http:// myurlshortener.com/<word>/ where <word> is a word from the english language.
 
 
-Quick start
+
+How to run on command line (terminal)
 -----------
-1. Clone project `git clone git@bitbucket.org:zavode/django-url-shortener-words.git`
+1. Clone project `git clone https://github.com/aysin/Url_Shortener`
 
-2. For install requirement run `pip install -r requirements.txt`
+2. For install requirement run `pip install -r requirements.txt `
 
 3. Run `python manage.py syncdb`
 
