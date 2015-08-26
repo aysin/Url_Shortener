@@ -91,7 +91,7 @@ TEMPLATE_DIRS = (
 # https://docs.djangoproject.com/en/1.7/howto/static-files/
 STATIC_URL = '/static/'
 SITE_URL = "http://localhost:8000"
-STATIC_ROOT = "/Users/aysinoruz/TestUrl/urlShortener/shortenerSite/static"
+STATIC_ROOT = "/Users/aysinoruz/TestUrl/Url_Shortener/templates"
 HOST = '127.0.0.1:8000'
 
 
